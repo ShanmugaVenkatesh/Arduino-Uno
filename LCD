@@ -15,3 +15,6 @@ void setup() {
 void loop() {
 
 }
+
+//A4 --> is connected to SDA.
+//A5 --> is connected to SCL.
