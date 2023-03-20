@@ -1,0 +1,17 @@
+#include <LiquidCrystal_I2C.h>
+#include <Wire.h>
+LiquidCrystal_I2C lcd(0x27 , 16 , 2); // lcd(lcd address, 16 - columns, 2 - rows)
+
+void setup() {
+  lcd.begin();
+  lcd.backlight();
+  lcd.clear();
+  lcd.setCursor(4,0); // setcursor(columns, rows)
+  lcd.print("Shanmuga");
+  lcd.setCursor(4,1);
+  lcd.print("Venkatesh");
+}
+
+void loop() {
+
+}
