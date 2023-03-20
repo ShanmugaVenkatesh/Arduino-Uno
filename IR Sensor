@@ -1,0 +1,9 @@
+void setup() {
+  pinMode(13,INPUT);
+  Serial.begin(9600);
+}
+
+void loop() {
+  int IR = digitalRead(13);
+  Serial.println(IR);  
+}
